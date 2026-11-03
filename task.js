@@ -129,7 +129,7 @@ console.log(palindrome(p_str))
 
 const arr_dupli = [1,2,2,3,3,3,4];
 
-let rm_dupli = new Set(arr_dupli);
+const rm_dupli = new Set(arr_dupli);
 
 console.log(rm_dupli);
 
@@ -149,6 +149,10 @@ function chain_three_method(num){
     console.log(total);
 
 }
+
+new_output=task_8.filter(n => {if (n%2===0) return n}).map(n => n**2).reduce((sum,n) => sum+n,0)
+
+console.log("new chain "+new_output);
 
 chain_three_method(task_8);
 
